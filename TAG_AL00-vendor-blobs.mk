@@ -273,6 +273,11 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcam.hal3a.v3.dng.so:system/lib64/libcam.hal3a.v3.dng.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libcam_mmp.so:system/lib/libcam_mmp.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcam_mmp.so:system/lib64/libcam_mmp.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libcam.jni.lomohaljni.so:system/lib/libcam.jni.lomohaljni.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcam.jni.lomohaljni.so:system/lib64/libcam.jni.lomohaljni.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libcamera_hwa_doc_dsfbeauty.so:system/lib/libcamera_hwa_doc_dsfbeauty.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libcamera_hwa_doc_vfacebeauty.so:system/lib/libcamera_hwa_doc_vfacebeauty.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libcamera_hwa_front_panorama.so:system/lib/libcamera_hwa_front_panorama.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libblisrc32.so:system/lib/libblisrc32.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libblisrc32.so:system/lib64/libblisrc32.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libmtk_mmutils.so:system/lib/libmtk_mmutils.so \
