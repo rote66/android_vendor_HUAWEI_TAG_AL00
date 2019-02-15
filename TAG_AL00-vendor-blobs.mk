@@ -85,8 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcam3_pipeline.so:system/lib64/libcam3_pipeline.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libcam3_utils.so:system/lib/libcam3_utils.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcam3_utils.so:system/lib64/libcam3_utils.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib/libcam.common.meizu.so:system/lib/libcam.common.meizu.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcam.common.meizu.so:system/lib64/libcam.common.meizu.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libcam.exif.v3.so:system/lib/libcam.exif.v3.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcam.exif.v3.so:system/lib64/libcam.exif.v3.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libcam.utils.cpuctrl.so:system/lib/libcam.utils.cpuctrl.so \
