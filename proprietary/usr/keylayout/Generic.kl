@@ -146,7 +146,7 @@ key 123   EISU
 key 124   YEN
 key 125   META_LEFT
 key 126   META_RIGHT
-key 127   MENU              VIRTUAL
+key 127   MENU
 key 128   MEDIA_STOP
 # key 129 "KEY_AGAIN"
 # key 130 "KEY_PROPS"
@@ -158,7 +158,7 @@ key 128   MEDIA_STOP
 # key 136 "KEY_FIND"
 # key 137 "KEY_CUT"
 # key 138 "KEY_HELP"
-key 139   MENU              VIRTUAL
+key 139   MENU
 key 140   CALCULATOR
 # key 141 "KEY_SETUP"
 key 142   SLEEP
@@ -177,7 +177,7 @@ key 152   POWER
 key 155   ENVELOPE
 key 156   BOOKMARK
 # key 157 "KEY_COMPUTER"
-key 158   BACK              VIRTUAL
+key 158   BACK
 key 159   FORWARD
 key 160   MEDIA_CLOSE
 key 161   MEDIA_EJECT
@@ -191,7 +191,7 @@ key 168   MEDIA_REWIND
 key 169   CALL
 # key 170 "KEY_ISO"
 key 171   MUSIC
-key 172   HOME              VIRTUAL
+key 172   HOME
 # key 173 "KEY_REFRESH"
 # key 174 "KEY_EXIT"
 # key 175 "KEY_MOVE"
@@ -213,6 +213,13 @@ key 180   NUMPAD_RIGHT_PAREN
 # key 191   F21
 # key 192   F22
 # key 193   F23
+# /*< DTS2014110604349 zhaifeng/00107904 20141106 begin */
+#key 189   TOUCH_PLUS_1
+#key 190   TOUCH_PLUS_2
+#key 191   TOUCH_PLUS_3
+#key 192   TOUCH_PLUS_4
+#key 193   TOUCH_PLUS_5
+# /* DTS2014110604349 zhaifeng/00107904 20141106 end >*/
 # key 194   F24
 # key 195 (undefined)
 # key 196 (undefined)
@@ -246,7 +253,20 @@ key 217   SEARCH
 key 224   BRIGHTNESS_DOWN
 key 225   BRIGHTNESS_UP
 key 226   HEADSETHOOK
-
+key 0x21c   S_CHANGED		
+key 0x21d   SC_CHANGED		 
+key 0x21e   SBA_CHANGED 	
+key 0x21f   SV_CHANGED		
+key 0x220   SM_CHANGED		
+key 0x221   SO_CHANGED		
+key 0x222   SW_CHANGED       
+key 0x223   SS_CHANGED        
+key 0x224   SZ_CHANGED     
+key 0x225   SAA_CHANGED    
+key 0x226   SBB_CHANGED       
+key 0x227   SAB_CHANGED      
+key 0x228   SCC_CHANGED    
+key 0x229  SIM_CHANGED
 key 256   BUTTON_1
 key 257   BUTTON_2
 key 258   BUTTON_3
@@ -404,8 +424,10 @@ key 484   B                 FUNCTION
 # key 503 KEY_BRL_DOT7
 # key 504 KEY_BRL_DOT8
 
-key 580   APP_SWITCH 		  VIRTUAL
+key 580   APP_SWITCH
 key 582   VOICE_ASSIST
+#add keycode for fingerprint by liuchaochao
+key 583   FPC
 
 # Keys defined by HID usages
 key usage 0x0c006F BRIGHTNESS_UP
