@@ -365,6 +365,11 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libui_ext.so:system/lib/libui_ext.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libui_ext.so:system/lib64/libui_ext.so \
     vendor/HUAWEI/TAG_AL00/proprietary/etc/perfservscntbl.txt:system/etc/perfservscntbl.txt \
+    vendor/HUAWEI/TAG_AL00/proprietary/usr/keylayout/ACCDET.kl:system/usr/keylayout/ACCDET.kl \
+    vendor/HUAWEI/TAG_AL00/proprietary/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    vendor/HUAWEI/TAG_AL00/proprietary/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
+    vendor/HUAWEI/TAG_AL00/proprietary/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
+    vendor/HUAWEI/TAG_AL00/proprietary/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libhwm.so:system/lib/libhwm.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libhwm.so:system/lib64/libhwm.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libfile_op.so:system/lib/libfile_op.so \
@@ -441,13 +446,11 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/pro
 
 #Adddon
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/data,system/data)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/tts,system/tts)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/usr/keylayout,system/usr/keylayout)
 
 #FPC TEST
 PRODUCT_COPY_FILES += \
-    vendor/HUAWEI/TAG_AL00/proprietary/vendor/lib/libfpcalgorithmso:system/vendor/lib/libfpcalgorithm.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/vendor/lib64/libfpcalgorithmso:system/vendor/lib64/libfpcalgorithm.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/vendor/lib/libfpcalgorithm.so:system/vendor/lib/libfpcalgorithm.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/vendor/lib64/libfpcalgorithm.so:system/vendor/lib64/libfpcalgorithm.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/hw/fingerprint_module.default.so:system/lib/hw/fingerprint_module.default.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/hw/fingerprint_module.default.so:system/lib64/hw/fingerprint_module.default.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
@@ -464,6 +467,7 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libteei_fp.so:system/lib64/libteei_fp.so 
 
 #C2K
+PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/cmddumper:system/bin/cmddumper \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/ctclient:system/bin/ctclient \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/flashlessd:system/bin/flashlessd \
@@ -474,9 +478,10 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libc2kutils.so:system/lib/libc2kutils.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libc2kutils.so:system/lib64/libc2kutils.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libc2kril.so:system/lib/libc2kril.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib/libviatelecom-withuim-ril:system/lib/libviatelecom-withuim-ril.so   
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libviatelecom-withuim-ril.so:system/lib/libviatelecom-withuim-ril.so   
 
 #VOLTE 
+PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_imcb:system/bin/volte_imcb \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_stack:system/bin/volte_stack \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_ua:system/bin/volte_ua 

@@ -94,19 +94,3 @@ key 163   MEDIA_NEXT
 key 165   MEDIA_PREVIOUS
 key 168   MEDIA_REWIND
 key 159   MEDIA_FAST_FORWARD
-key 0x21c   S_CHANGED		
-key 0x21d   SC_CHANGED		 
-key 0x21e   SBA_CHANGED 	
-key 0x21f   SV_CHANGED		
-key 0x220   SM_CHANGED		
-key 0x221   SO_CHANGED		
-key 0x222   SW_CHANGED       
-key 0x223   SS_CHANGED        
-key 0x224   SZ_CHANGED     
-key 0x225   SAA_CHANGED    
-key 0x226   SBB_CHANGED       
-key 0x227   SAB_CHANGED      
-key 0x228   SCC_CHANGED  
-key 0x229   SIM_CHANGED
-#add keycode for fingerprint by liuchaochao
-key 583   FPC
