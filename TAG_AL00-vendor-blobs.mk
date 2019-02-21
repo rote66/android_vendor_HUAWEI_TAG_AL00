@@ -440,9 +440,48 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libvp9dec_sa.ca7.so:system/lib/libvp9dec_sa.ca7.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libmtcloader.so:system/lib/libmtcloader.so \
     vendor/HUAWEI/TAG_AL00/proprietary/etc/.tp/thermal.conf:system/etc/.tp/thermal.conf \
-    vendor/HUAWEI/TAG_AL00/proprietary/etc/.tp/thermal.high.conf:system/etc/.tp/thermal.high.conf \
-    vendor/HUAWEI/TAG_AL00/proprietary/etc/.tp/thermal.mid.conf:system/etc/.tp/thermal.mid.conf \
-    vendor/HUAWEI/TAG_AL00/proprietary/etc/.tp/thermal.low.conf:system/etc/.tp/thermal.low.conf \
-    vendor/HUAWEI/TAG_AL00/proprietary/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf
+    vendor/HUAWEI/TAG_AL00/proprietary/etc/.tp/.thermal_policy_00:system/etc/.tp/.thermal_policy_00
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/thh,system/thh)
+
+#Adddon
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/data,system/data)
+
+#FPC TEST
+PRODUCT_COPY_FILES += \
+    vendor/HUAWEI/TAG_AL00/proprietary/vendor/lib/libfpcalgorithm.so:system/vendor/lib/libfpcalgorithm.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/vendor/lib64/libfpcalgorithm.so:system/vendor/lib64/libfpcalgorithm.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/hw/fingerprint_module.default.so:system/lib/hw/fingerprint_module.default.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/hw/fingerprint_module.default.so:system/lib64/hw/fingerprint_module.default.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/initthh:system/bin/initthh \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/teei_daemon:system/bin/teei_daemon \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/hw/fingerprint.mt6753.so:system/lib/hw/fingerprint.mt6753.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/hw/fingerprint.mt6753.so:system/lib64/hw/fingerprint.mt6753.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libfingerprint_tac.so:system/lib/libfingerprint_tac.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libfingerprint_tac.so:system/lib64/libfingerprint_tac.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libteei_fp.so:system/lib/libteei_fp.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libteei_fp.so:system/lib64/libteei_fp.so 
+
+#C2K
+PRODUCT_COPY_FILES += \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/cmddumper:system/bin/cmddumper \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/ctclient:system/bin/ctclient \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/flashlessd:system/bin/flashlessd \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/pppd_via:system/bin/pppd_via \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/statusd:system/bin/statusd \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/viaradiooptions:system/bin/viaradiooptions \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/viarild:system/bin/viarild \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libc2kutils.so:system/lib/libc2kutils.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libc2kutils.so:system/lib64/libc2kutils.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libc2kril.so:system/lib/libc2kril.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/lib/libviatelecom-withuim-ril.so:system/lib/libviatelecom-withuim-ril.so   
+
+#VOLTE 
+PRODUCT_COPY_FILES += \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_imcb:system/bin/volte_imcb \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_stack:system/bin/volte_stack \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_ua:system/bin/volte_ua 
