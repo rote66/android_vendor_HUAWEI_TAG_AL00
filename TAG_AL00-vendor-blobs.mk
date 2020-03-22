@@ -118,7 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/hw/gps.mt6753.so:system/lib/hw/gps.mt6753.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/hw/gps.mt6753.so:system/lib64/hw/gps.mt6753.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/app/YGPS/YGPS.apk:system/app/YGPS/YGPS.apk \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/mtk_agpsd:system/bin/mtk_agpsd \
     vendor/HUAWEI/TAG_AL00/proprietary/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/mtkrild:system/bin/mtkrild \
@@ -443,6 +442,7 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/etc/.tp/.thermal_policy_00:system/etc/.tp/.thermal_policy_00
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/thh,system/thh)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/app,system/app)
 
 #Adddon
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/HUAWEI/TAG_AL00/proprietary/data,system/data)
@@ -456,15 +456,16 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/initthh:system/bin/initthh \
+    vendor/HUAWEI/TAG_AL00/proprietary/bin/init_thh:system/bin/init_thh \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/teei_daemon:system/bin/teei_daemon \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib/hw/fingerprint.mt6753.so:system/lib/hw/fingerprint.mt6753.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib64/hw/fingerprint.mt6753.so:system/lib64/hw/fingerprint.mt6753.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libfingerprint_tac.so:system/lib/libfingerprint_tac.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib64/libfingerprint_tac.so:system/lib64/libfingerprint_tac.so \
     vendor/HUAWEI/TAG_AL00/proprietary/lib/libteei_fp.so:system/lib/libteei_fp.so \
-    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libteei_fp.so:system/lib64/libteei_fp.so 
+    vendor/HUAWEI/TAG_AL00/proprietary/lib64/libteei_fp.so:system/lib64/libteei_fp.so \
+    #vendor/HUAWEI/TAG_AL00/proprietary/lib64/libhardware.so:system/lib64/libhardware.so \
+    #vendor/HUAWEI/TAG_AL00/proprietary/lib/libhardware.so:system/lib/libhardware.so \
+    vendor/HUAWEI/TAG_AL00/proprietary/etc/fpc1021.conf:system/etc/fpc1021.conf \
+    vendor/HUAWEI/TAG_AL00/proprietary/etc/fpc1021w160.bin:system/etc/fpc1021w160.bin
 
 #C2K
 PRODUCT_COPY_FILES += \
@@ -485,3 +486,8 @@ PRODUCT_COPY_FILES += \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_imcb:system/bin/volte_imcb \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_stack:system/bin/volte_stack \
     vendor/HUAWEI/TAG_AL00/proprietary/bin/volte_ua:system/bin/volte_ua 
+
+
+#ETC ADD
+PRODUCT_COPY_FILES += \
+    vendor/HUAWEI/TAG_AL00/proprietary/etc/AL812_test_sensor_0.ini:system/etc/AL812_test_sensor_0.ini 
